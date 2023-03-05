@@ -1,0 +1,44 @@
+hr{
+    margin: 0;
+}
+.roda_pe{
+    background-color: var(--branco-padrao);
+    padding: 1em;
+}
+.roda_pe_lista_item{
+    display: none;
+}
+@media screen and (min-width: 1024px) {
+    .roda_pe{
+        display: flex;
+        justify-content: space-around;
+    }
+    .roda_pe_lista_item{
+        display: flex;
+        align-items: center;
+        margin: 1em 0 1em 0;
+    }
+    .roda_pe_lista_item a{
+        text-decoration: none;
+        color: var(--cinza );
+        margin: 0 0 0 0.5em;
+    }
+    .roda_pe_lsita_titulo{
+        text-transform: uppercase;
+        color: var(--cinza);
+        font-size: 14px;
+    }
+    .roda_pe_texto{
+        font-size: 24px;
+        font-weight: 700;
+    }
+}
+@media screen and (min-width: 1724px) {
+    .roda_pe_lista{
+        border-left: 1px solid var(--cinza) ;
+        padding-left: 1em;
+    }
+    .roda_pe{
+        padding: 3em 0;
+    }
+}
